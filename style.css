@@ -4,7 +4,8 @@ html {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
+  scrollbar-width: thin;
+  scrollbar-color: #07deff #090909;
 }
 
 body {
@@ -277,12 +278,6 @@ hr{
   box-shadow: 0 0 20px rgba(0, 242, 255, 0.5);
 }
 
-/* Scrollbar */
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #07deff #090909;
-}
-
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -296,7 +291,7 @@ html {
   border-radius: 10px;
 }
 
-/* Animation */
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -310,7 +305,7 @@ html {
   }
 }
 
-/* Responsive */
+
 @media (max-width: 900px) {
   .navbar {
     text-align: center;
@@ -398,7 +393,7 @@ form button:hover {
   margin-left: 30%;
 }
 
-/* Simple Footer */
+
 .footer {
   background: #111;
   color: #ccc;
@@ -415,4 +410,5 @@ form button:hover {
 
 .footer p:hover {
   color: #00adb5;
+
 }
