@@ -1,0 +1,418 @@
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  background: #252525;
+  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+.navbar {
+  text-align: right;
+  padding: 15px;
+  background-color: rgb(55, 55, 55);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: aliceblue;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #00adb5;
+  transform: scale(1.05);
+}
+
+.navbar a:active {
+  color: #8000ff;
+  transform: scale(1.05);
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+h2 {
+  color: #5adec9;
+  margin: 20px 0 10px;
+  font-size: 28px;
+}
+
+span {
+  color: #58b1ff;
+}
+h3{
+  color: #ffffff;
+  font-size: 28px;
+  
+  text-align: center;
+}
+
+.t1,
+.t2,
+.t3 {
+  max-width: 800px;
+  margin: 15px auto;
+  font-size: 18px;
+}
+
+.t1 {
+  font-style: italic;
+}
+
+.text-animation{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+
+}
+.text-animation span{
+  position: relative;
+}
+.text-animation span::before{
+  content:'software Engineer';
+  color: #07deff;
+  animation: words 10s infinite;
+}
+.text-animation span::after{
+  content: "";
+ 
+  position: absolute;
+  width:calc(100%+8px);
+  height: 100%;
+ 
+  right: -8px;
+  animation: cursor 0.6s infinite, typing 10s steps(14) infinite;
+}
+
+@keyframes words{
+  0%,20%{
+    content: 'Software Engineer';
+  }
+  21%,40%{content: "Game Developer";
+  }
+  41%,60%{content: "Web Developer";
+  }
+  61%,80%{content: "Ethical Hacker";
+  }
+  81%,100%{content: "Audio Producer";}
+}
+@keyframes typing{
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95%,
+  {width:0;}
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85%{
+    width: 100%;
+  }
+}
+
+.button1{
+  border: 1px solid #07deff;
+  background-color:#252525;
+  color: #ffffff;
+  border-radius: 12px;
+  width: 100px;
+  height: 50px;
+ margin-right: 15px;
+ margin-left: 15px;
+ margin-top: 30px;
+ font-family:Verdana;
+ text-align: center;
+  
+}
+.button1{
+   margin-right: 15px;
+   margin-left: 15px;
+}
+.button1:hover{
+ background-color: #07deff;
+ color: white;
+ transform: scale(1.2);
+}
+hr{
+  width: 50%;
+}
+.img1,
+.img2 {
+  border-radius: 50%;
+  box-shadow: 0 0 25px #6adcff;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.img1 {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  margin: 20px auto;
+  display: block;
+
+}
+
+.img1:hover {
+  border: 6px solid #6adcff;
+  box-shadow: 0 0 40px #6adcff, 0 0 25px green;
+}
+
+.img2 {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px #6adcff;
+}
+
+
+.project-card {
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #444;
+  border-radius: 12px;
+  max-width: 900px;
+  background: rgba(11, 79, 116, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 173, 181, 0.5);
+}
+
+.gallery img {
+  width: 28%;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Skills */
+.skills-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 900px;
+  height: 400px;
+  margin: auto;
+  display: grid;
+  gap: 20px;
+
+}
+
+.skills-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.5);
+}
+
+.skills-card {
+  margin: 20px;
+  padding: 20px;
+
+  border: 1px solid #444;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  text-align: center;
+  position: inline;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.5);
+}
+
+/* Scrollbar */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #07deff #090909;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090909;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #07deff;
+  border-radius: 10px;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .t1,
+  .t2,
+  .t3 {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .img1,
+  .img2 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .gallery img {
+    width: 80%;
+    display: block;
+    margin: 15px auto;
+  }
+}
+
+.footer {
+  background-color: #444;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  padding: 30px;
+  position: sticky;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  box-sizing: border-box;
+  margin-left: 30%;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+
+}
+
+form input,
+form textarea {
+  background: #2a2a2a;
+  color: white;
+}
+
+form button {
+  background: #0ab7d9;
+  color: white;
+  text-decoration: solid;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #3e84e6;
+}
+
+.contact {
+  text-align: center;
+  margin-left: 30%;
+}
+
+/* Simple Footer */
+.footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.footer p {
+  margin: 5px 0;
+  transition: color 0.3s;
+}
+
+.footer p:hover {
+  color: #00adb5;
+}
